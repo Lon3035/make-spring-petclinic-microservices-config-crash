@@ -1,6 +1,9 @@
 ﻿server:
   port: 8761
-
+  tomcat: 
+    threads:
+      max: 200
+      
 eureka:
   instance:
     hostname: localhost
