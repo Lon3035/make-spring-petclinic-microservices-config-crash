@@ -24,7 +24,7 @@ server:
   port: 8083
   tomcat: 
     threads:
-      max: 200
+      max: 1
 eureka:
   client:
     serviceUrl:
