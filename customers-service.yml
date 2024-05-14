@@ -17,8 +17,8 @@ spring:
 server:
   port: 8081
   tomcat: 
-    threads:
-      max: 200
+    max-threads: 200
+    min-spare-threads: 200
 eureka:
   client:
     serviceUrl:
