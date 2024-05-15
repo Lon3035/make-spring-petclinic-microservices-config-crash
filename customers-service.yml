@@ -16,9 +16,10 @@ spring:
     baseUrl: http://tracing-server:9411
 server:
   port: 8081
-  tomcat: 
-    max-threads: 200
-    min-spare-threads: 200
+  tomcat:
+    threads:
+      max: 200
+      min-spare: 200
 eureka:
   client:
     serviceUrl:
