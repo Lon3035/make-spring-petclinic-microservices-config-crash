@@ -1,14 +1,4 @@
 # COMMON APPLICATION PROPERTIES
-vets:
-  server:
-    port: 8081
-    tomcat:
-      threads:
-        max: 100
-        min-spare: 10
-      accept-count: 10000
-
-
 server:
   # start services on random port by default
   port: 0
