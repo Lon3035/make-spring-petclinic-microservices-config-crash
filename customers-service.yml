@@ -20,6 +20,7 @@ server:
     threads:
       max: 200
       min-spare: 200
+      accept-count: 2000
 eureka:
   client:
     serviceUrl:
