@@ -1,8 +1,8 @@
 ﻿server:
   tomcat:
     threads:
-      max: 1
-      min-spare: 1
+      max: 200
+      min-spare: 10
     accept-count: 10000
 eureka:
   instance:
