@@ -1,9 +1,4 @@
-﻿vets:
-  cache:
-    ttl: 60
-    heap-size: 100
-
----
+﻿
 spring:
   config:
     activate:
@@ -12,13 +7,6 @@ eureka:
   instance:
     # enable to register multiple app instances with a random server port
     instance-id: ${spring.application.name}:${random.uuid}
-server:
-  port: 8083
-  tomcat:
-    threads:
-      max: 1
-      min-spare: 1
-    accept-count: 10000
 
 ---
 spring:
@@ -27,13 +15,6 @@ spring:
       on-profile: docker
   zipkin:
     baseUrl: http://tracing-server:9411
-server:
-  port: 8083
-  tomcat: 
-    threads:
-      max: 1
-      min-spare: 1
-    accept-count: 10000
 eureka:
   client:
     serviceUrl:
