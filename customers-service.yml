@@ -6,7 +6,13 @@ eureka:
   instance:
     # enable to register multiple app instances with a random server port
     instance-id: ${spring.application.name}:${random.uuid}
-
+server:
+  port: 8081
+  tomcat:
+    threads:
+      max: 200
+      min-spare: 10
+    accept-count: 10000
 ---
 spring:
   config:
