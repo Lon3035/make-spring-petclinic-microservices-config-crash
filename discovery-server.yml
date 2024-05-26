@@ -7,6 +7,9 @@
 eureka:
   instance:
     hostname: localhost
+    prefer-ip-address: true
+    # Necessary for Docker otherwise you will get 172.0.0.x IP
+    ip-address: ${HOST}
   # standalone mode
   client:
     registerWithEureka: false
