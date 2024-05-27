@@ -33,3 +33,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://141.22.10.81:8761/eureka/
+  instance:
+    # enable to register multiple app instances with a random server port
+    instance-id: ${spring.application.name}:${random.uuid}
+    prefer-ip-address: true
+    # Necessary for Docker otherwise you will get 172.0.0.x IP
+    ip-address: ${HOST}
